@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="tailwind-config.js"></script>
+</head>
+
+<body class="font-sans text-slate-600 antialiased">
+    <nav class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="index.html"
+                class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-lg p-1 -ml-1">
+                <div
+                    class="relative w-10 h-10 flex-shrink-0 overflow-hidden rounded-full shadow-sm group-hover:shadow-md transition-all">
+                    <img src="images/logo.png" alt="San Carlos City Logo" class="w-full h-full object-cover">
+                </div>
+                <div class="flex flex-col">
+                    <span
+                        class="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight group-hover:text-emerald-800 transition-colors leading-none">
+                        San Carlos City
+                    </span>
+                    <span
+                        class="text-[10px] uppercase tracking-widest font-bold text-slate-500 group-hover:text-emerald-600 transition-colors mt-0.5">
+                        Government
+                    </span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-10">
+                <a href="index.html"
+                    class="text-base font-bold text-slate-700 hover:text-emerald-800 transition-colors border-b-2 border-transparent hover:border-emerald-500 py-1">
+                    Home
+                </a>
+                <a href="services.html"
+                    class="text-base font-bold text-slate-700 hover:text-emerald-800 transition-colors border-b-2 border-transparent hover:border-emerald-500 py-1">
+                    Services
+                </a>
+                <a href="#"
+                    class="text-base font-bold text-slate-700 hover:text-emerald-800 transition-colors border-b-2 border-transparent hover:border-emerald-500 py-1">
+                    Tourism
+                </a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#"
+                    class="hidden md:inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-emerald-50 border-2 border-emerald-200 text-emerald-900 text-base font-bold hover:bg-emerald-100 hover:border-emerald-300 transition-all focus:ring-4 focus:ring-emerald-100/50 shadow-sm hover:shadow-md">
+                    Contact Us
+                </a>
+
+                <button type="button"
+                    class="md:hidden inline-flex items-center justify-center p-2 w-12 h-12 text-slate-700 rounded-lg hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-white">
+
+        <section class="relative min-h-[550px] flex items-center font-sans overflow-hidden">
+
+            <div class="absolute inset-0 z-0">
+                <img src="images/plaza.png" alt="City Hall Services" class="w-full h-full object-cover object-center" />
+
+                <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-emerald-900/10"></div>
+            </div>
+
+            <div class="relative z-10 w-full max-w-screen-xl mx-auto px-6 py-12 text-center">
+
+                <a href="#"
+                    class="group inline-flex items-center justify-between py-1.5 px-2 pr-4 mb-8 bg-white/90 backdrop-blur-sm border-2 border-emerald-100 rounded-full shadow-sm hover:border-emerald-400 hover:shadow-md transition-all cursor-pointer no-underline mx-auto">
+                    <span
+                        class="px-3 py-1 mr-3 text-xs font-bold text-white uppercase tracking-wider bg-emerald-600 rounded-full">
+                        Update
+                    </span>
+                    <span
+                        class="text-sm font-bold text-slate-800 group-hover:text-emerald-800 transition-colors text-left">
+                        Online Tax Payments are now active
+                    </span>
+                    <svg class="w-4 h-4 ml-2 text-slate-400 group-hover:text-emerald-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+
+                <h1 class="mb-6 text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
+                    Efficient, Transparent
+                    <span class="text-emerald-800 block md:inline">Public Services</span>
+                </h1>
+
+                <p class="mb-10 text-lg md:text-xl font-medium text-slate-700 max-w-2xl mx-auto leading-relaxed">
+                    Skip the line. Search our charter to find requirements, download forms, or apply for permits from
+                    the comfort of your home.
+                </p>
+
+                <form class="relative w-full max-w-xl mx-auto mb-12">
+                    <div class="relative group">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
+                            <svg class="w-6 h-6 text-slate-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+
+                        <input type="search"
+                            class="block w-full h-14 ps-14 pe-36 text-lg text-slate-900 bg-white border-2 border-slate-200 rounded-full shadow-lg focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-600 outline-none transition-all placeholder:text-slate-400"
+                            placeholder="Search for 'Business Permit'..." required />
+
+                        <button type="submit"
+                            class="absolute end-1.5 bottom-1.5 top-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-full px-6 transition-colors text-sm md:text-base shadow-sm">
+                            Search
+                        </button>
+                    </div>
+                </form>
+
+                <div class="flex flex-wrap justify-center gap-4 text-sm font-bold">
+                    <span class="text-slate-500 uppercase tracking-widest text-xs py-2">Quick Filters:</span>
+                    <button
+                        class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-emerald-100 hover:text-emerald-800 transition-colors border border-slate-200">Business</button>
+                    <button
+                        class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-emerald-100 hover:text-emerald-800 transition-colors border border-slate-200">Civil
+                        Registry</button>
+                    <button
+                        class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-emerald-100 hover:text-emerald-800 transition-colors border border-slate-200">Health</button>
+                    <button
+                        class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-emerald-100 hover:text-emerald-800 transition-colors border border-slate-200">Engineering</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-screen-xl mx-auto px-6">
+
+                <div
+                    class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-slate-100 pb-6">
+                    <div>
+                        <h2 class="text-emerald-700 font-bold tracking-widest uppercase text-sm mb-2">Department
+                            Directory</h2>
+                        <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900">Browse by Department</h3>
+                    </div>
+                    <a href="#"
+                        class="hidden md:flex items-center font-bold text-emerald-700 hover:text-emerald-800 mt-4 md:mt-0">
+                        View Citizen's Charter <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <a href="#"
+                        class="group flex flex-col bg-slate-50 p-8 rounded-3xl border-2 border-slate-100 hover:bg-white hover:shadow-xl hover:border-emerald-400 hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between mb-6">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white text-blue-600 shadow-sm flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">LCR</span>
+                        </div>
+                        <h4
+                            class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
+                            Civil Registry</h4>
+                        <p class="text-slate-600 text-base mb-6 leading-relaxed flex-grow">
+                            Request certified true copies of birth, marriage, and death certificates. Application for
+                            marriage licenses.
+                        </p>
+                        <div
+                            class="flex items-center text-sm font-bold text-slate-400 group-hover:text-emerald-700 transition-colors">
+                            View Services <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="#"
+                        class="group flex flex-col bg-slate-50 p-8 rounded-3xl border-2 border-slate-100 hover:bg-white hover:shadow-xl hover:border-emerald-400 hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between mb-6">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white text-emerald-600 shadow-sm flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">CHO</span>
+                        </div>
+                        <h4
+                            class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
+                            Health Office</h4>
+                        <p class="text-slate-600 text-base mb-6 leading-relaxed flex-grow">
+                            Schedule medical consultations, vaccination records, sanitary permits, and rural health unit
+                            services.
+                        </p>
+                        <div
+                            class="flex items-center text-sm font-bold text-slate-400 group-hover:text-emerald-700 transition-colors">
+                            View Services <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="#"
+                        class="group flex flex-col bg-slate-50 p-8 rounded-3xl border-2 border-slate-100 hover:bg-white hover:shadow-xl hover:border-emerald-400 hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between mb-6">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white text-orange-600 shadow-sm flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">Eng'g</span>
+                        </div>
+                        <h4
+                            class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
+                            Building Official</h4>
+                        <p class="text-slate-600 text-base mb-6 leading-relaxed flex-grow">
+                            Building permits, occupancy permits, electrical inspections, and zoning clearances.
+                        </p>
+                        <div
+                            class="flex items-center text-sm font-bold text-slate-400 group-hover:text-emerald-700 transition-colors">
+                            View Services <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="#"
+                        class="group flex flex-col bg-slate-50 p-8 rounded-3xl border-2 border-slate-100 hover:bg-white hover:shadow-xl hover:border-emerald-400 hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between mb-6">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white text-pink-600 shadow-sm flex items-center justify-center group-hover:bg-pink-600 group-hover:text-white transition-colors duration-300">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">CSWD</span>
+                        </div>
+                        <h4
+                            class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
+                            Social Welfare</h4>
+                        <p class="text-slate-600 text-base mb-6 leading-relaxed flex-grow">
+                            Senior citizen IDs, PWD registration, solo parent benefits, and indigency assistance.
+                        </p>
+                        <div
+                            class="flex items-center text-sm font-bold text-slate-400 group-hover:text-emerald-700 transition-colors">
+                            View Services <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="#"
+                        class="group flex flex-col bg-slate-50 p-8 rounded-3xl border-2 border-slate-100 hover:bg-white hover:shadow-xl hover:border-emerald-400 hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between mb-6">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white text-purple-600 shadow-sm flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">Assessor</span>
+                        </div>
+                        <h4
+                            class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
+                            City Assessor</h4>
+                        <p class="text-slate-600 text-base mb-6 leading-relaxed flex-grow">
+                            Tax declarations, property assessments, transfer of ownership, and property identification.
+                        </p>
+                        <div
+                            class="flex items-center text-sm font-bold text-slate-400 group-hover:text-emerald-700 transition-colors">
+                            View Services <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="#"
+                        class="group flex flex-col bg-slate-50 p-8 rounded-3xl border-2 border-slate-100 hover:bg-white hover:shadow-xl hover:border-emerald-400 hover:-translate-y-1 transition-all duration-300">
+                        <div class="flex items-start justify-between mb-6">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white text-yellow-600 shadow-sm flex items-center justify-center group-hover:bg-yellow-600 group-hover:text-white transition-colors duration-300">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">PESO</span>
+                        </div>
+                        <h4
+                            class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
+                            Employment</h4>
+                        <p class="text-slate-600 text-base mb-6 leading-relaxed flex-grow">
+                            Job fairs, referral placement, special program for employment of students (SPES).
+                        </p>
+                        <div
+                            class="flex items-center text-sm font-bold text-slate-400 group-hover:text-emerald-700 transition-colors">
+                            View Services <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-slate-50 border-t border-slate-200">
+            <div class="max-w-screen-xl mx-auto px-6">
+                <div class="mb-10 text-center md:text-left">
+                    <h3 class="text-2xl font-bold text-slate-900">Frequently Downloaded Forms</h3>
+                    <p class="text-slate-600 mt-2">Save time by downloading and filling out these forms before your
+                        visit.</p>
+                </div>
+
+                <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="divide-y divide-slate-100">
+
+                        <div
+                            class="p-6 hover:bg-slate-50 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 2H7a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-slate-900">Unified Business Permit Application Form</h5>
+                                    <p class="text-sm text-slate-500">Business Permit & Licensing Office • PDF • 1.2MB
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="inline-flex items-center justify-center px-4 py-2 border border-slate-200 rounded-lg text-sm font-bold text-slate-700 hover:text-emerald-700 hover:border-emerald-300 hover:bg-emerald-50 transition-all">
+                                Download
+                            </a>
+                        </div>
+
+                        <div
+                            class="p-6 hover:bg-slate-50 transition-colors flex flex-col md:flex-row md:items-center justify-between gap-4">
+                            <div class="flex items-center gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 2H7a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-slate-900">Application for Marriage License</h5>
+                                    <p class="text-sm text-slate-500">Local Civil Registry • PDF • 800KB</p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="inline-flex items-center justify-center px-4 py-2 border border-slate-200 rounded-lg text-sm font-bold text-slate-700 hover:text-emerald-700 hover:border-emerald-300 hover:bg-emerald-50 transition-all">
+                                Download
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800 font-sans text-sm">
+        <div class="max-w-screen-xl mx-auto px-4">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+                <div class="space-y-6">
+                    <a href="#" class="flex items-center gap-2 group">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white">
+                            <img src="images/logo.png" alt="Logo">
+                        </div>
+                        <span class="text-2xl font-bold text-white tracking-tight">
+                            San Carlos City
+                        </span>
+                    </a>
+                    <p class="text-slate-400 leading-relaxed">
+                        Committed to sustainable growth, transparent governance, and providing excellent service to
+                        every San Carleño.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white transition-all duration-300">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-emerald-600 hover:text-white transition-all duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"></rect>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-base mb-6">Government</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Office of the Mayor</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">City Council</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Departments</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Transparency Board</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Ordinances</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-base mb-6">Online Services</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Business Permits (BPLO)</a>
+                        </li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Real Property Tax</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Birth Certificate</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Job Portal</a></li>
+                        <li><a href="#" class="hover:text-emerald-400 transition-colors">Downloadable Forms</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-base mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-emerald-500 mt-0.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>
+                                Palaris Street,<br>
+                                San Carlos City,<br>
+                                Pangasinan, 2420
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <span>(034) 312-0000</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <a href="mailto:info@sancarloscity.gov.ph"
+                                class="hover:text-white transition-colors">info@sancarloscity.gov.ph</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-500 text-xs">
+                    &copy; 2025 City Government of San Carlos. All rights reserved.
+                </p>
+                <div class="flex gap-6 text-xs text-slate-500">
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Terms of Use</a>
+                    <a href="#" class="hover:text-emerald-400 transition-colors">Sitemap</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
