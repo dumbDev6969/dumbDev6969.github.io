@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="tailwind-config.js"></script>
     <title>San Carlos</title>
 </head>
@@ -70,235 +73,90 @@
         </div>
     </nav>
     <!-- Hero -->
-    <section class="relative min-h-[650px] flex items-center font-sans overflow-hidden">
+    <section class="relative min-h-[550px] w-full flex items-center overflow-hidden pl-20 ">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="images/video-plaza.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        <div class="absolute inset-0 z-0">
-            <img src="images/plaza.png" alt="San Carlos City Plaza" class="w-full h-full object-cover object-center" />
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
 
-            <div class="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-emerald-900/10"></div>
-        </div>
-
-        <div class="relative z-10 w-full max-w-screen-xl mx-auto px-4 py-12 text-center lg:py-24">
-
-            <a href="#"
-                class="group inline-flex items-center justify-between py-1.5 px-2 pr-4 mb-8 bg-white/95 backdrop-blur-sm border-2 border-emerald-100 rounded-full shadow-sm hover:border-emerald-400 hover:shadow-md transition-all cursor-pointer no-underline">
-                <span
-                    class="px-3 py-1 mr-3 text-xs font-bold text-white uppercase tracking-wider bg-emerald-700 rounded-full">
-                    New
-                </span>
-                <span class="text-sm font-bold text-slate-800 group-hover:text-emerald-800 transition-colors text-left">
-                    City Council declares new green initiative
-                </span>
-                <svg class="w-4 h-4 ml-2 text-slate-400 group-hover:text-emerald-600" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m1 9 4-4-4-4" />
-                </svg>
-            </a>
-
-            <h1
-                class="mb-6 text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                Welcome to
-                <span class="text-emerald-800 underline decoration-4 decoration-emerald-400/60 underline-offset-8">
-                    San Carlos City
-                </span>
+        <div class="relative z-20 text-center md:text-start px-6 max-w-4xl">
+            <h1 data-aos="fade-right"
+                class="text-4xl md:text-6xl font-extrabold text-emerald-300 tracking-tight mb-4 uppercase">
+                The Plaza Experience
             </h1>
-
-            <p class="mb-10 text-lg md:text-xl font-medium text-slate-700 max-w-2xl mx-auto leading-relaxed">
-                The Mango Capital of the Philippines. Experience a city where heritage meets progress, and community
-                drives sustainable growth.
+            <p data-aos="fade-right" data-aos="delay-300"
+                class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto font-light">
+                Discover a seamless blend of modern architecture and vibrant community life. Join us in the heart of the
+                city.
             </p>
 
-            <form class="relative w-full max-w-xl mx-auto">
-                <div class="relative group">
-                    <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
-                        <svg class="w-6 h-6 text-slate-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
-                    </div>
-
-                    <input type="search"
-                        class="block w-full h-14 ps-14 pe-36 text-lg text-slate-900 bg-white border-2 border-slate-200 rounded-full shadow-lg focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-600 outline-none transition-all placeholder:text-slate-400"
-                        placeholder="Search services..." required />
-
-                    <button type="submit"
-                        class="absolute end-1.5 bottom-1.5 top-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-full px-6 transition-colors text-sm md:text-base shadow-sm">
-                        Search
-                    </button>
-                </div>
-            </form>
-
-            <div class="mt-12 flex flex-wrap justify-center gap-8 text-base font-bold text-slate-700">
-                <a href="#services"
-                    class="flex items-center gap-2 hover:text-emerald-800 hover:underline decoration-2 underline-offset-4 transition-all group">
-                    <div
-                        class="w-3 h-3 rounded-full bg-emerald-500 group-hover:scale-110 transition-transform shadow-sm">
-                    </div>
-                    E-Services
-                </a>
-                <a href="#tourism"
-                    class="flex items-center gap-2 hover:text-emerald-800 hover:underline decoration-2 underline-offset-4 transition-all group">
-                    <div
-                        class="w-3 h-3 rounded-full bg-emerald-500 group-hover:scale-110 transition-transform shadow-sm">
-                    </div>
-                    Tourism
-                </a>
+            <div>
+                <button data-aos="fade-right" data-aos="delay-500"
+                    class="px-8 bg-emerald-400 py-3 text-black font-semibold rounded-full hover:bg-emerald-500 transition-all">
+                    <a href="#gallery">
+                        Explore San Carlos
+                    </a>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Public service -->
-    <section id="services" class="py-20 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-screen-xl mx-auto px-6">
+    <!-- Mission and Vision -->
+    <section class="py-24 min-w-[550px]  px-6">
+        <div class="header mx-auto max-w-screen-xl">
+            <h1 class="font-bold text-4xl md:text-5xl mb-4">Welcom to <span class="text-emerald-700">San Calor City,
+                    Pangasinan.</span></h1>
+            <p class="text-xl font-bold md:text-xl text-dark mb-8 max-w-2xl">San Carlos Maunlad at Maayos!</p>
+        </div>
+        <div class="flex flex-col gap-12 py-16 px-4 max-w-6xl mx-auto">
 
-            <div class="text-center mb-16 max-w-3xl mx-auto">
-                <h2 class="text-sm md:text-base font-bold text-emerald-700 tracking-widest uppercase mb-3">
-                    Efficient Public Service
-                </h2>
-                <h3 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
-                    What can we do for you today?
-                </h3>
-                <p class="text-slate-700 text-xl font-medium leading-relaxed">
-                    Access the most requested city services online. Fast, transparent, and convenient access from the
-                    comfort of your home.
+            <div data-aos="fade-left"
+                class="group relative p-8 md:p-12  border-l-8 border-emerald-600 rounded-r-2xl transition-all hover:bg-emerald-50 transition delay-300 duration-300 ">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="p-3 bg-emerald-100 text-emerald-600 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </span>
+                    <h2 class="font-bold text-3xl md:text-4xl text-emerald-700 tracking-tight">Our Vision</h2>
+                </div>
+                <p class="text-slate-700 text-lg md:text-xl text-bold leading-relaxed font-medium italic">
+                    "San Carlos City is envisioned to be an environment-friendly Agro-Industrial, Education and Tourism
+                    Center of Pangasinan with upbeat and robust commercial activities structured on efficient services,
+                    harmonious relationship and peace towards sustainable development and improved quality of life of
+                    its people."
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div data-aos="fade-right"
+                class="group relative  p-8 md:p-12 border-r-8 border-emerald-600 rounded-l-2xl text-right  hover:bg-emerald-50 ">
 
-                <a href="#"
-                    class="group relative bg-white p-8 rounded-3xl shadow-sm border-2 border-slate-100 hover:shadow-xl hover:-translate-y-1 hover:border-emerald-400 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-emerald-100/50 text-emerald-700 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
-                            </path>
+                <div class="flex items-center justify-end gap-4 mb-4 ">
+                    <h2 class="font-bold text-3xl md:text-4xl text-emerald-700 tracking-tight">Our Mission</h2>
+                    <span class="p-3 bg-emerald-100 text-emerald-600 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
                         </svg>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
-                        Business Permits
-                    </h4>
-                    <p class="text-slate-700 text-base mb-6 leading-relaxed">
-                        Apply for new business registrations or renew existing permits online via BPLO.
-                    </p>
-                    <div
-                        class="flex items-center text-base font-bold text-emerald-700 group-hover:translate-x-2 transition-transform">
-                        Apply Now
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </div>
-                </a>
-
-                <a href="#"
-                    class="group relative bg-white p-8 rounded-3xl shadow-sm border-2 border-slate-100 hover:shadow-xl hover:-translate-y-1 hover:border-emerald-400 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-emerald-100/50 text-emerald-700 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
-                        Real Property Tax
-                    </h4>
-                    <p class="text-slate-700 text-base mb-6 leading-relaxed">
-                        View your tax assessments and settle property dues securely through our portal.
-                    </p>
-                    <div
-                        class="flex items-center text-base font-bold text-emerald-700 group-hover:translate-x-2 transition-transform">
-                        Pay Online
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </div>
-                </a>
-
-                <a href="#"
-                    class="group relative bg-white p-8 rounded-3xl shadow-sm border-2 border-slate-100 hover:shadow-xl hover:-translate-y-1 hover:border-emerald-400 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-emerald-100/50 text-emerald-700 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 21v-8a2 2 0 012-2h14a2 2 0 012 2v8M16 10l-4-4-4 4m8 4a2 2 0 11-4 0 2 2 0 014 0z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
-                        Tourism & Culture
-                    </h4>
-                    <p class="text-slate-700 text-base mb-6 leading-relaxed">
-                        Discover the Mango Capital. Find hotels, festivals, and heritage spots to visit.
-                    </p>
-                    <div
-                        class="flex items-center text-base font-bold text-emerald-700 group-hover:translate-x-2 transition-transform">
-                        Explore
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </div>
-                </a>
-
-                <a href="#"
-                    class="group relative bg-white p-8 rounded-3xl shadow-sm border-2 border-slate-100 hover:shadow-xl hover:-translate-y-1 hover:border-emerald-400 transition-all duration-300">
-                    <div
-                        class="w-14 h-14 rounded-2xl bg-emerald-100/50 text-emerald-700 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
-                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors">
-                        Transparency
-                    </h4>
-                    <p class="text-slate-700 text-base mb-6 leading-relaxed">
-                        Access full disclosure policies, budget reports, and bidding opportunities.
-                    </p>
-                    <div
-                        class="flex items-center text-base font-bold text-emerald-700 group-hover:translate-x-2 transition-transform">
-                        View Reports
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </div>
-                </a>
-
-            </div>
-
-            <div
-                class="mt-20 pt-12 border-t-2 border-slate-200 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8 text-center">
-                <div>
-                    <dt class="text-4xl md:text-5xl font-extrabold text-emerald-700 tracking-tight">86</dt>
-                    <dd class="text-lg font-bold text-slate-600 mt-2 uppercase tracking-wide">Barangays</dd>
+                    </span>
                 </div>
-                <div>
-                    <dt class="text-4xl md:text-5xl font-extrabold text-emerald-700 tracking-tight">200k+</dt>
-                    <dd class="text-lg font-bold text-slate-600 mt-2 uppercase tracking-wide">Residents</dd>
-                </div>
-                <div>
-                    <dt class="text-4xl md:text-5xl font-extrabold text-emerald-700 tracking-tight">100%</dt>
-                    <dd class="text-lg font-bold text-slate-600 mt-2 uppercase tracking-wide">Compliance</dd>
-                </div>
-                <div>
-                    <dt class="text-4xl md:text-5xl font-extrabold text-emerald-700 tracking-tight">24/7</dt>
-                    <dd class="text-lg font-bold text-slate-600 mt-2 uppercase tracking-wide">Response</dd>
-                </div>
+                <p class="text-slate-700 text-lg md:text-xl text-bold leading-relaxed font-medium italic">
+                    "To make San Carlos City the economic tiger of the North through highly disciplined and committed
+                    work force and improved agro-industrial, commercial, educational and tourism initiatives thus
+                    enhancing the quality of life of its people."
+                </p>
             </div>
 
         </div>
     </section>
-
     <!-- Gallery -->
-    <section id="tourism" class="py-24 bg-white">
+    <section id="gallery" class="py-24 bg-white">
         <div class="max-w-screen-xl mx-auto px-6">
 
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
@@ -306,7 +164,7 @@
                     <h2 class="text-base font-bold text-emerald-700 tracking-widest uppercase mb-3">
                         Discover San Carlos
                     </h2>
-                    <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    <h3 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
                         Experience the beauty of our city
                     </h3>
                     <p class="text-slate-700 text-xl font-medium mt-6 leading-relaxed">
@@ -326,68 +184,175 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:min-h-[650px]">
 
-                <div
-                    class="relative group md:col-span-2 md:row-span-2 overflow-hidden rounded-3xl bg-slate-200 cursor-pointer shadow-md">
-                    <img src="images/img1.png" alt="City Plaza"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
 
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/church.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
-
-                    <div class="absolute bottom-0 left-0 p-8 md:p-10">
-                        <span
-                            class="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-widest text-white uppercase bg-emerald-700 rounded-full shadow-lg">
-                            Heritage
-                        </span>
-                        <h4 class="text-3xl font-extrabold text-white mb-3 tracking-tight">
-                            San Carlos City Plaza
-                        </h4>
-                        <p class="text-slate-100 text-lg font-medium opacity-90 leading-relaxed max-w-lg">
-                            The heart of our community gatherings and historical landmarks. A place for everyone.
-                        </p>
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/local-dining.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/mango.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-
-                <div
-                    class="relative group md:col-span-2 md:row-span-1 overflow-hidden rounded-3xl bg-slate-200 cursor-pointer shadow-md">
-                    <img src="images/img2.png" alt="Mango Festival"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent">
+                <div class="grid gap-4">
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/plaza.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <div class="absolute bottom-0 left-0 p-8">
-                        <span
-                            class="inline-block px-3 py-1 mb-2 text-xs font-bold tracking-wider text-white uppercase bg-orange-600 rounded-full shadow-md">
-                            Festivals
-                        </span>
-                        <h4 class="text-2xl font-bold text-white">Annual Mango Festival</h4>
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/img4.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/img3.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-
-                <div
-                    class="relative group md:col-span-1 md:row-span-1 overflow-hidden rounded-3xl bg-slate-200 cursor-pointer shadow-md">
-                    <img src="images/img3.png" alt="Local Commerce"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent">
+                <div class="grid gap-4">
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/img2.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <div class="absolute bottom-0 left-0 p-6">
-                        <h4 class="text-xl font-bold text-white">Local Markets</h4>
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/img1.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                       <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/festival.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-
-                <div
-                    class="relative group md:col-span-1 md:row-span-1 overflow-hidden rounded-3xl bg-slate-200 cursor-pointer shadow-md">
-                    <img src="images/img4.png" alt="Nature Parks"
-                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent">
+                <div class="grid gap-4">
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/mayor.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <div class="absolute bottom-0 left-0 p-6">
-                        <h4 class="text-xl font-bold text-white">Nighttime Parks</h4>
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/img4.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure
+                            class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 hover:scale-105">
+                            <a href="#">
+                                <img class="rounded-lg"
+                                    src="images/local-dining.png"
+                                    alt="image description">
+                            </a>
+                            <figcaption class="absolute px-4 text-lg text-white bottom-6">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptates.</p>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
     <!-- Mayor -->
@@ -1097,6 +1062,10 @@
 
         </div>
     </footer>
+    <script>
+        // Initialize AOS animation
+        AOS.init();
+    </script>
 </body>
 
 </html>
