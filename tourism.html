@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+    <title>Discover San Carlos City | Tourism</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="tailwind-config.js"></script>
 </head>
 
@@ -71,57 +73,59 @@
 
    <main class="bg-white">
 
-    <section class="relative min-h-[550px] flex items-center font-sans overflow-hidden">
-        
-        <div class="absolute inset-0 z-0">
-            <img src="images/plaza.png" alt="San Carlos City Plaza" class="w-full h-full object-cover object-center" />
-            <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-emerald-900/10"></div>
-        </div>
-
-        <div class="relative z-10 w-full max-w-screen-xl mx-auto px-6 py-12 text-center">
-
-            <a href="#" class="group inline-flex items-center justify-between py-1.5 px-2 pr-4 mb-8 bg-white/90 backdrop-blur-sm border-2 border-emerald-100 rounded-full shadow-sm hover:border-emerald-400 hover:shadow-md transition-all cursor-pointer no-underline mx-auto">
-                <span class="px-3 py-1 mr-3 text-xs font-bold text-white uppercase tracking-wider bg-emerald-600 rounded-full">
-                    Festival
-                </span>
-                <span class="text-sm font-bold text-slate-800 group-hover:text-emerald-800 transition-colors text-left">
-                    Mango-Bamboo Festival 2024 Schedule
-                </span>
-                <svg class="w-4 h-4 ml-2 text-slate-400 group-hover:text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-            </a>
-
-            <h1 class="mb-6 text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                Discover the
-                <span class="text-emerald-800 block md:inline">Mango Capital</span>
-            </h1>
-
-            <p class="mb-10 text-lg md:text-xl font-medium text-slate-700 max-w-2xl mx-auto leading-relaxed">
-                Experience our rich heritage and vibrant culture. Search for attractions, find hotels, or explore upcoming events.
-            </p>
-
-            <form class="relative w-full max-w-xl mx-auto mb-12">
-                <div class="relative group">
-                    <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">
-                        <svg class="w-6 h-6 text-slate-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
-                    </div>
-                    <input type="search" class="block w-full h-14 ps-14 pe-36 text-lg text-slate-900 bg-white border-2 border-slate-200 rounded-full shadow-lg focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-600 outline-none transition-all placeholder:text-slate-400" placeholder="Search for 'Resorts' or 'Food'..." required />
-                    <button type="submit" class="absolute end-1.5 bottom-1.5 top-1.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-full px-6 transition-colors text-sm md:text-base shadow-sm">
-                        Search
-                    </button>
-                </div>
-            </form>
-
-            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold">
-                <span class="text-slate-500 uppercase tracking-widest text-xs py-2">Quick Filters:</span>
-                <button class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-emerald-100 hover:text-emerald-800 transition-colors border border-slate-200">Heritage</button>
-                <button class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-emerald-100 hover:text-emerald-800 transition-colors border border-slate-200">Accommodations</button>
-                <button class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 hover:bg-emerald-100 hover:text-emerald-800 transition-colors border border-slate-200">Dining</button>
+        <section class="relative min-h-[650px] flex items-center font-sans overflow-hidden">
+            <!-- Immersive Background -->
+            <div class="absolute inset-0 z-0">
+                <img src="images/plaza.png" alt="San Carlos City Plaza" class="w-full h-full object-cover object-center scale-110 motion-safe:animate-[pulse_10s_infinite]" />
+                <div class="absolute inset-0 bg-gradient-to-b from-emerald-950/40 via-white/80 to-white"></div>
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-emerald-500/20 blur-[120px] rounded-full"></div>
             </div>
 
-        </div>
-    </section>
+            <div class="relative z-10 w-full max-w-screen-xl mx-auto px-6 py-20 text-center">
+
+                <a href="#" data-aos="fade-down"
+                    class="group inline-flex items-center justify-between py-1.5 px-2 pr-4 mb-10 bg-white/80 backdrop-blur-md border border-emerald-100 rounded-full shadow-sm hover:border-emerald-400 hover:shadow-md transition-all cursor-pointer no-underline mx-auto">
+                    <span class="px-3 py-1 mr-3 text-[10px] font-black text-white uppercase tracking-tighter bg-emerald-600 rounded-full italic">
+                        Festival
+                    </span>
+                    <span class="text-xs font-bold text-slate-800 group-hover:text-emerald-800 transition-colors text-left uppercase tracking-widest">
+                        Mango-Bamboo Festival 2024 Schedule
+                    </span>
+                    <svg class="w-4 h-4 ml-2 text-slate-400 group-hover:text-emerald-600 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" /></svg>
+                </a>
+
+                <h1 data-aos="zoom-out" data-aos-delay="100" class="mb-8 text-5xl md:text-8xl font-black tracking-tighter text-slate-900 leading-[0.95]">
+                    Explore the <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-500">Mango Capital</span>
+                </h1>
+
+                <p data-aos="fade-up" data-aos-delay="200" class="mb-14 text-xl md:text-2xl font-medium text-slate-700 max-w-3xl mx-auto leading-relaxed">
+                    Experience our rich heritage and vibrant culture. Search for attractions, find hotels, or explore upcoming events.
+                </p>
+
+                <form data-aos="fade-up" data-aos-delay="300" class="relative w-full max-w-2xl mx-auto mb-16">
+                    <div class="relative group">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-7 pointer-events-none group-focus-within:text-emerald-600 transition-colors">
+                            <svg class="w-6 h-6 text-slate-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" class="block w-full h-20 ps-16 pe-44 text-xl font-medium text-slate-900 bg-white border border-slate-200 rounded-[2.5rem] shadow-2xl focus:ring-12 focus:ring-emerald-500/10 focus:border-emerald-500 outline-none transition-all placeholder:text-slate-400" placeholder="Find your next destination..." required />
+                        <button type="submit" class="absolute end-2.5 bottom-2.5 top-2.5 bg-slate-950 hover:bg-emerald-700 text-white font-black rounded-[2rem] px-12 transition-all text-lg shadow-lg active:scale-95">
+                            Search
+                        </button>
+                    </div>
+                </form>
+
+                <div data-aos="fade-up" data-aos-delay="400" class="flex flex-wrap justify-center items-center gap-4 text-sm font-bold">
+                    <span class="text-slate-400 uppercase tracking-widest text-[10px] py-2 mr-2">Experience:</span>
+                    <button class="px-6 py-2.5 rounded-2xl bg-white text-slate-700 hover:bg-emerald-600 hover:text-white transition-all border border-slate-200 shadow-sm hover:shadow-emerald-900/10 active:scale-95">Heritage Sites</button>
+                    <button class="px-6 py-2.5 rounded-2xl bg-white text-slate-700 hover:bg-emerald-600 hover:text-white transition-all border border-slate-200 shadow-sm hover:shadow-emerald-900/10 active:scale-95">Luxury Stays</button>
+                    <button class="px-6 py-2.5 rounded-2xl bg-white text-slate-700 hover:bg-emerald-600 hover:text-white transition-all border border-slate-200 shadow-sm hover:shadow-emerald-900/10 active:scale-95">Local Food</button>
+                </div>
+
+            </div>
+        </section>
 
     <section class="py-20 bg-white">
         <div class="max-w-screen-xl mx-auto px-6">
@@ -136,60 +140,62 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 auto-rows-[250px]">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 auto-rows-[280px]">
                 
-                <div class="group relative lg:col-span-2 lg:row-span-2 rounded-3xl overflow-hidden cursor-pointer">
-                    <img src="images/church.png" alt="St Dominic Church" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <!-- Main Church -->
+                <div data-aos="fade-up" class="group relative lg:col-span-2 lg:row-span-2 rounded-[2.5rem] overflow-hidden cursor-pointer shadow-xl hover:shadow-emerald-900/20 transition-all duration-500" data-modal-trigger data-img-src="images/church.png" data-title="St. Dominic Parish">
+                    <img src="images/church.png" alt="St Dominic Church" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-10">
+                        <span class="inline-block px-4 py-1.5 mb-4 rounded-full bg-emerald-600 text-white text-[10px] font-black uppercase tracking-widest shadow-lg">Ancient Heritage</span>
+                        <h3 class="text-4xl font-black text-white mb-2 tracking-tight">St. Dominic Parish</h3>
+                        <p class="text-slate-300 text-lg font-medium hidden md:block leading-relaxed">The spiritual heart of the city since 1587, standing as a testament to centuries of faith.</p>
+                    </div>
+                </div>
+
+                <!-- Festival -->
+                <div data-aos="fade-up" data-aos-delay="100" class="group relative lg:col-span-1 lg:row-span-2 rounded-[2.5rem] overflow-hidden cursor-pointer shadow-xl hover:shadow-emerald-900/20 transition-all duration-500" data-modal-trigger data-img-src="images/festival.png" data-title="Mango Bamboo Festival">
+                    <img src="images/festival.png" alt="Mango Bamboo Festival" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
                     <div class="absolute bottom-0 left-0 p-8">
-                        <span class="inline-block px-3 py-1 mb-2 rounded-full bg-emerald-600 text-white text-xs font-bold uppercase tracking-wider">Heritage</span>
-                        <h3 class="text-3xl font-bold text-white mb-1">St. Dominic Parish</h3>
-                        <p class="text-slate-300 text-sm hidden md:block">The spiritual heart of the city since 1587.</p>
+                        <span class="text-emerald-400 font-black uppercase tracking-widest text-[10px] mb-2 block">Major Events</span>
+                        <h3 class="text-3xl font-black text-white leading-none">Mango Bamboo Festival</h3>
                     </div>
                 </div>
 
-                <div class="group relative lg:col-span-1 lg:row-span-2 rounded-3xl overflow-hidden cursor-pointer">
-                    <img src="images/festival.png" alt="Mango Bamboo Festival" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                <!-- Plaza -->
+                <div data-aos="fade-up" data-aos-delay="200" class="group relative rounded-[2rem] overflow-hidden cursor-pointer shadow-lg hover:shadow-emerald-900/20 transition-all duration-500" data-modal-trigger data-img-src="images/plaza.png" data-title="Public Plaza">
+                    <img src="images/plaza.png" alt="City Plaza" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
                     <div class="absolute bottom-0 left-0 p-6">
-                        <span class="text-emerald-400 font-bold uppercase tracking-widest text-xs mb-1 block">Culture</span>
-                        <h3 class="text-2xl font-bold text-white">Mango Bamboo Festival</h3>
-                    </div>
-                </div>
-
-                <div class="group relative rounded-3xl overflow-hidden cursor-pointer">
-                    <img src="images/plaza.png" alt="City Plaza" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute bottom-0 left-0 p-6">
-                        <span class="text-emerald-400 font-bold uppercase tracking-widest text-xs mb-1 block">Lifestyle</span>
                         <h3 class="text-xl font-bold text-white">City Plaza</h3>
                     </div>
                 </div>
 
-                <div class="group relative rounded-3xl overflow-hidden cursor-pointer">
-                    <img src="images/mango.png" alt="Sweet Mangoes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-80"></div>
+                <!-- Mangoes -->
+                <div data-aos="fade-up" data-aos-delay="300" class="group relative rounded-[2rem] overflow-hidden cursor-pointer shadow-lg hover:shadow-emerald-900/20 transition-all duration-500" data-modal-trigger data-img-src="images/mango.png" data-title="Sweet Mangoes">
+                    <img src="images/mango.png" alt="Sweet Mangoes" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
                     <div class="absolute bottom-0 left-0 p-6">
-                        <span class="text-emerald-400 font-bold uppercase tracking-widest text-xs mb-1 block">Product</span>
                         <h3 class="text-xl font-bold text-white">Sweet Mangoes</h3>
                     </div>
                 </div>
 
-                <div class="group relative lg:col-span-2 rounded-3xl overflow-hidden cursor-pointer">
-                    <img src="images/img3.png" alt="Shopping Center" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute bottom-0 left-0 p-6">
-                        <span class="text-emerald-400 font-bold uppercase tracking-widest text-xs mb-1 block">Commercial</span>
-                        <h3 class="text-2xl font-bold text-white">Modern Shopping</h3>
+                <!-- Shopping -->
+                <div data-aos="fade-up" class="group relative lg:col-span-2 rounded-[2.5rem] overflow-hidden cursor-pointer shadow-xl hover:shadow-emerald-900/20 transition-all duration-500" data-modal-trigger data-img-src="images/img3.png" data-title="Modern Lifestyle">
+                    <img src="images/img3.png" alt="Shopping Center" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h3 class="text-2xl font-black text-white">Modern Lifestyle</h3>
                     </div>
                 </div>
 
-                <div class="group relative lg:col-span-2 rounded-3xl overflow-hidden cursor-pointer">
-                    <img src="images/local-dining.png" alt="Local Dining" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-80"></div>
-                    <div class="absolute bottom-0 left-0 p-6">
-                        <span class="text-emerald-400 font-bold uppercase tracking-widest text-xs mb-1 block">Gastronomy</span>
-                        <h3 class="text-2xl font-bold text-white">Local Delicacies</h3>
+                <!-- Dining -->
+                <div data-aos="fade-up" data-aos-delay="100" class="group relative lg:col-span-2 rounded-[2.5rem] overflow-hidden cursor-pointer shadow-xl hover:shadow-emerald-900/20 transition-all duration-500" data-modal-trigger data-img-src="images/local-dining.png" data-title="Local Gastronomy">
+                    <img src="images/local-dining.png" alt="Local Dining" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                    <div class="absolute bottom-0 left-0 p-8">
+                        <h3 class="text-2xl font-black text-white">Local Gastronomy</h3>
                     </div>
                 </div>
 
@@ -212,55 +218,58 @@
                 <h3 class="text-3xl md:text-4xl font-extrabold text-slate-900">Travel Essentials</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-                <a href="#" class="group flex flex-col bg-white p-8 rounded-3xl border-2 border-slate-100 hover:border-emerald-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-50 text-emerald-700 shadow-sm flex items-center justify-center group-hover:bg-emerald-700 group-hover:text-white transition-colors duration-300">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                <a href="#" data-aos="fade-up" class="group flex flex-col bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-emerald-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white shadow-sm transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                         </div>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">Stay</span>
+                        <span class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 text-[10px] font-black uppercase tracking-widest group-hover:bg-emerald-100 group-hover:text-emerald-700 transition-colors">Stay</span>
                     </div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-2">Accommodations</h4>
-                    <p class="text-slate-600 text-sm">Find hotels, inns, and resorts.</p>
+                    <h4 class="text-2xl font-black text-slate-900 mb-2 group-hover:text-emerald-700 transition-colors">Accommodations</h4>
+                    <p class="text-slate-600 font-medium leading-relaxed">Relax in world-class hotels, heritage inns, and tropical resorts designed for your comfort.</p>
                 </a>
 
-                <a href="#" class="group flex flex-col bg-white p-8 rounded-3xl border-2 border-slate-100 hover:border-emerald-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-50 text-orange-600 shadow-sm flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white transition-colors duration-300">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path></svg>
+                <a href="#" data-aos="fade-up" data-aos-delay="100" class="group flex flex-col bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-emerald-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="w-16 h-16 rounded-2xl bg-orange-50 text-orange-600 flex items-center justify-center group-hover:bg-orange-600 group-hover:text-white shadow-sm transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"></path></svg>
                         </div>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">Eat</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-[10px] font-black uppercase tracking-widest group-hover:bg-orange-100 group-hover:text-orange-700 transition-colors">Eat</span>
                     </div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-2">Food & Dining</h4>
-                    <p class="text-slate-600 text-sm">Restaurants and local delicacies.</p>
+                    <h4 class="text-2xl font-black text-slate-900 mb-2 group-hover:text-emerald-700 transition-colors">Food & Dining</h4>
+                    <p class="text-slate-600 font-medium leading-relaxed">Savor the unique flavors of the Mango capital, from street side delicacies to fine dining.</p>
                 </a>
 
-                <a href="#" class="group flex flex-col bg-white p-8 rounded-3xl border-2 border-slate-100 hover:border-emerald-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="w-14 h-14 rounded-2xl bg-slate-50 text-purple-600 shadow-sm flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <a href="#" data-aos="fade-up" data-aos-delay="200" class="group flex flex-col bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-emerald-500 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
+                    <div class="flex items-start justify-between mb-8">
+                        <div class="w-16 h-16 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center group-hover:bg-purple-600 group-hover:text-white shadow-sm transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                         </div>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider">Events</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-500 text-[10px] font-black uppercase tracking-widest group-hover:bg-purple-100 group-hover:text-purple-700 transition-colors">Events</span>
                     </div>
-                    <h4 class="text-2xl font-bold text-slate-900 mb-2">Festivals</h4>
-                    <p class="text-slate-600 text-sm">Calendar of city events.</p>
+                    <h4 class="text-2xl font-black text-slate-900 mb-2 group-hover:text-emerald-700 transition-colors">Festivals</h4>
+                    <p class="text-slate-600 font-medium leading-relaxed">Join our vibrant celebrations and experience the local culture at its most colorful peaks.</p>
                 </a>
 
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white border-t border-slate-200">
-        <div class="max-w-screen-xl mx-auto px-6">
-            <div class="bg-slate-50 rounded-3xl border border-slate-200 shadow-sm overflow-hidden flex flex-col md:flex-row items-center justify-between p-8">
-                <div class="mb-6 md:mb-0">
-                    <h3 class="text-2xl font-bold text-slate-900">Download Tourist Map</h3>
-                    <p class="text-slate-600 mt-1">Get the official PDF map of San Carlos City for offline use.</p>
+    <section class="py-20 bg-emerald-900 text-white overflow-hidden relative">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_120%,rgba(16,185,129,0.3),transparent)]"></div>
+        </div>
+        <div class="max-w-screen-xl mx-auto px-6 relative z-10">
+            <div class="bg-white/10 backdrop-blur-xl rounded-[3rem] border border-white/20 shadow-2xl flex flex-col md:flex-row items-center justify-between p-12 gap-8" data-aos="zoom-in">
+                <div class="text-center md:text-left">
+                    <h3 class="text-4xl font-black mb-3">Tourist Navigational Map</h3>
+                    <p class="text-emerald-100 text-lg font-medium">Get the official high-resolution PDF map of San Carlos City for offline exploration.</p>
                 </div>
-                <a href="#" class="inline-flex items-center justify-center px-8 py-3 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 shadow-md transition-all">
-                    Download PDF
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                <a href="#" class="group inline-flex items-center justify-center px-12 py-5 bg-white text-emerald-900 font-black rounded-3xl hover:bg-emerald-50 shadow-2xl transition-all active:scale-95 text-xl whitespace-nowrap">
+                    Download Full Map
+                    <svg class="w-6 h-6 ml-3 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                 </a>
             </div>
         </div>
@@ -387,6 +396,86 @@
 
         </div>
     </footer>
+    <!-- Image Modal -->
+    <div id="image-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-slate-950/95 backdrop-blur-md transition-opacity duration-300 opacity-0 cursor-pointer">
+        <button id="close-modal" class="absolute top-8 right-8 text-white hover:text-emerald-400 transition-colors z-[110] focus:outline-none">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <div class="relative max-w-5xl w-full p-4 flex flex-col items-center">
+            <img id="modal-image" src="" alt="Full view" class="max-h-[80vh] w-auto rounded-3xl shadow-2xl transform scale-95 transition-transform duration-300 pointer-events-none border border-white/10">
+            <h4 id="modal-title" class="text-white text-3xl font-black mt-8 tracking-tight"></h4>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 z-[60] bg-emerald-600 text-white p-3.5 rounded-2xl shadow-xl opacity-0 translate-y-10 pointer-events-none transition-all duration-500 hover:bg-emerald-700 hover:scale-110 active:scale-95 focus:outline-none focus:ring-4 focus:ring-emerald-500/50 group" aria-label="Back to top">
+        <svg class="w-6 h-6 transform group-hover:-translate-y-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path>
+        </svg>
+    </button>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-expo'
+        });
+
+        // Modal Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-image');
+            const modalTitle = document.getElementById('modal-title');
+            const closeBtn = document.getElementById('close-modal');
+            const triggers = document.querySelectorAll('[data-modal-trigger]');
+
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const src = trigger.getAttribute('data-img-src');
+                    const title = trigger.getAttribute('data-title');
+                    
+                    modalImg.src = src;
+                    modalTitle.textContent = title;
+                    
+                    modal.classList.remove('hidden');
+                    // Force reflow
+                    modal.offsetHeight;
+                    modal.classList.remove('opacity-0');
+                    modalImg.classList.remove('scale-95');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            const closeModal = () => {
+                modal.classList.add('opacity-0');
+                modalImg.classList.add('scale-95');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }, 300);
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if(e.target === modal) closeModal();
+            });
+        });
+
+        // Back to Top Logic
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                backToTop.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            } else {
+                backToTop.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 
 </html>
